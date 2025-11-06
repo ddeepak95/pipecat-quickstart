@@ -32,7 +32,7 @@ from pipecat.audio.turn.smart_turn.local_smart_turn_v3 import LocalSmartTurnAnal
 
 logger.info("✅ Local Smart Turn Analyzer V3 loaded")
 logger.info("Loading Silero VAD model...")
-from pipecat.audio.vad.silero import SileroVADAnalyzer
+from pipecat.audio.vad.silero import SileroVADAnalyzer, VADParams
 
 logger.info("✅ Silero VAD model loaded")
 
@@ -137,6 +137,8 @@ async def run_bot(transport: BaseTransport, runner_args: RunnerArguments):
     async def on_client_disconnected(transport, client):
         logger.info(f"Client disconnected")
         await task.cancel()
+
+
 
     runner = PipelineRunner(handle_sigint=runner_args.handle_sigint)
 
