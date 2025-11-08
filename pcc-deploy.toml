@@ -1,6 +1,6 @@
-agent_name = "quickstart"
-image = "your_username/quickstart:0.1"
-secret_set = "quickstart-secrets"
+agent_name = "pesu-pipecat"
+image = "ddeepak95/pesu-pipecat:0.1"
+secret_set = "pesu-pipecat-secrets"
 agent_profile = "agent-1x"
 
 # RECOMMENDED: Set an image pull secret:
