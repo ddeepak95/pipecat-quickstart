@@ -14,3 +14,4 @@ RUN --mount=type=cache,target=/root/.cache/uv \
 
 # Copy the application code
 COPY ./bot.py bot.py
+COPY ./LANGUAGE_CONSTANTS.py LANGUAGE_CONSTANTS.py
